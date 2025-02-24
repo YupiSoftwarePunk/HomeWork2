@@ -12,7 +12,18 @@ namespace HomeWork2
             Console.WriteLine(Figure1.V(12.2));
             Console.WriteLine(Figure1.V(12.22, 34.11, 99.6));
 
-            Console.WriteLine(Number.PrintMax(12, 10));
+            Console.WriteLine("\n");
+
+            Console.WriteLine(Number1.PrintMax(12, 10));
+
+            Console.WriteLine("\n");
+
+            Console.WriteLine(Number2.Multiply(-12, -10));
+            Console.WriteLine(Number2.Multiply(12.99, 10.11));
+            Console.WriteLine(Number2.Multiply(121212121212, 90));
+            Console.WriteLine(Number2.Multiply(0, 10));
+
+            Console.WriteLine("\n");
 
             Student bob = new Student("Bob Peter Andersen", 3.5, 5, "15.07.2024");
             Student sue = new Student("Sue Augustina Lorenzzo", 5, 3, "21.07.2024");
