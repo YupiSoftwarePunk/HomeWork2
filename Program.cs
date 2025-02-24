@@ -65,6 +65,19 @@ namespace HomeWork2
             Console.WriteLine(Figure6.P(5.2, 2.44));
             Console.WriteLine(Figure6.P(4.5, 3, 6));
             Console.WriteLine(Figure6.P(9, 1, 7));
+
+            Console.WriteLine("\n");
+
+            int[] arr = { 34, 4, 1, 12, 10 };
+            Console.WriteLine(Array1.AverageNum(arr));
+
+            double[] arr2 = { 12.88, 9.9, 0.88, 77.11 };
+            Console.WriteLine(Array1.AverageNum(arr2));
+
+            Console.WriteLine("\n");
+
+            Console.WriteLine(Array2.MaxNum(arr));
+            Console.WriteLine(Array2.MaxNum(arr2));
         }
     }
 }
