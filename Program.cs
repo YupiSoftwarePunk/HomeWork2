@@ -78,6 +78,24 @@ namespace HomeWork2
 
             Console.WriteLine(Array2.MaxNum(arr));
             Console.WriteLine(Array2.MaxNum(arr2));
+
+            Console.WriteLine("\n");
+
+            Deposit deposit = new Deposit("Georgy Smith Sedric", 1000);
+            Console.WriteLine($"Sum before = {deposit.GetSum()}");
+            deposit++;
+            Console.WriteLine($"Sum after = {deposit.GetSum()}");
+
+            Console.WriteLine("\n");
+
+            Credit credit1 = new Credit("Georgy Smith Sedric", 1000);
+            Credit credit2 = new Credit("Sally Goodman Smith", 500);
+            Console.WriteLine($"Sum before = {credit1.GetSum()}");
+            Console.WriteLine($"Payment = {credit1.GetPercent()}");
+
+            Console.WriteLine($"Difference between sum and payment = {credit1.GetSum() - credit1.GetPercent()}");
+
+            Console.WriteLine("\n");
         }
     }
 }
