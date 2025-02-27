@@ -1,6 +1,7 @@
 ﻿
 // Перегрузка операторов
 
+using System.Diagnostics;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace HomeWork2
@@ -96,6 +97,19 @@ namespace HomeWork2
             Console.WriteLine($"Difference between sum and payment = {credit1.GetSum() - credit1.GetPercent()}");
 
             Console.WriteLine("\n");
+
+            College c = new College("Top", 500, 20, 30);
+            College c2 = new College("Toppp", 700, 40, 50);
+            Console.WriteLine(c < c2);
+            Console.WriteLine(Standart.isFits(c));
+
+            Console.WriteLine("\n");
+
+            Cat barsik = new Cat("Barsik", "siam", "12.02.2020", 3);
+            Cat Tolik = new Cat("Tolik", "siam", "30.10.2017", 5);
+            Console.WriteLine(barsik > Tolik);
+            Console.WriteLine(barsik * Tolik);
+            Console.WriteLine(CatWeight.WhatShape(Tolik));
         }
     }
 }
