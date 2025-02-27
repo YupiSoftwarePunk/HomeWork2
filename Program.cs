@@ -110,6 +110,17 @@ namespace HomeWork2
             Console.WriteLine(barsik > Tolik);
             Console.WriteLine(barsik * Tolik);
             Console.WriteLine(CatWeight.WhatShape(Tolik));
+
+            Console.WriteLine("\n");
+
+            Human kolan = new Human("Коля Петров Николаевич", "male", 16, "голубые");
+            Human anya = new Human("Анна Сергеевна Йомае", "female", 25, "карие");
+
+            Console.WriteLine(kolan + anya);
+            Console.WriteLine(Efficiency.IsEfficiency(kolan));
+            Console.WriteLine(Efficiency.IsEfficiency(anya));
+
+            Console.WriteLine("\n");
         }
     }
 }
