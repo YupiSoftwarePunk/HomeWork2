@@ -121,6 +121,11 @@ namespace HomeWork2
             Console.WriteLine(Efficiency.IsEfficiency(anya));
 
             Console.WriteLine("\n");
+
+            Game game = new Game("Skater 2", 2000, 10000, 8.6, 9.0, 2.4);
+            game++;
+            Console.WriteLine(PopularGame.IsGamePopular(game));
+
         }
     }
 }
