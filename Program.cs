@@ -131,6 +131,12 @@ namespace HomeWork2
             Console.WriteLine(PopularGame.IsGamePopular(game2));
 
             Console.WriteLine("\n");
+
+            State us = new State(340000000, "USA", 9867000);
+            State germany = new State(82000000, "Germany", 357592);
+            Console.WriteLine(us > germany);
+            Console.WriteLine(us + germany);
+            Console.WriteLine(Empire.IsEmpire(germany));
         }
     }
 }
