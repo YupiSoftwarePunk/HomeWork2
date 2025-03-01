@@ -38,6 +38,49 @@ namespace HomeWork2
             return a;
         }
 
-
+        public static string operator >(Game a, Game b)
+        {
+            if ( a.averageGamers >= b.averageGamers && a.maxGamers >= b.maxGamers && a.rating >= b.rating)
+            {
+                return a.name;
+            }
+            else
+            {
+                return b.name;
+            }
+        }
+        public static string operator <(Game a, Game b)
+        {
+            if (a.averageGamers <= b.averageGamers && a.maxGamers <= b.maxGamers && a.rating <= b.rating)
+            {
+                return b.name;
+            }
+            else
+            {
+                return a.name;
+            }
+        }
+        public static string operator==(Game a, Game b)
+        {
+            if (a.averageGamers == b.averageGamers && a.maxGamers == b.maxGamers && a.rating == b.rating)
+            {
+                return a.name;
+            }
+            else
+            {
+                return b.name;
+            }
+        }
+        public static string operator !=(Game a, Game b)
+        {
+            if (a.averageGamers != b.averageGamers && a.maxGamers != b.maxGamers && a.rating != b.rating)
+            {
+                return a.name;
+            }
+            else
+            {
+                return b.name;
+            }
+        }
     }
 }

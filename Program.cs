@@ -123,9 +123,14 @@ namespace HomeWork2
             Console.WriteLine("\n");
 
             Game game = new Game("Skater 2", 2000, 10000, 8.6, 9.0, 2.4);
+            Game game2 = new Game("Skater 4", 1000, 5000, 6.7, 8.0, 1.0);
             game++;
             Console.WriteLine(PopularGame.IsGamePopular(game));
+            Console.WriteLine($"Какая игра лучше, Skater 2 или Skater 4? Ответ: {game > game2}");
+            Console.WriteLine($"Какая игра лучше, Skater 2 или Skater 4? Ответ: {game < game2}");
+            Console.WriteLine(PopularGame.IsGamePopular(game2));
 
+            Console.WriteLine("\n");
         }
     }
 }
