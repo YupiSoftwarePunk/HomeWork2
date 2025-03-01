@@ -137,6 +137,13 @@ namespace HomeWork2
             Console.WriteLine(us > germany);
             Console.WriteLine(us + germany);
             Console.WriteLine(Empire.IsEmpire(germany));
+
+            Console.WriteLine("\n");
+
+            Ingredient ingredient1 = new Ingredient("Морковь", "огонь", 10);
+            Ingredient ingredient2 = new Ingredient("Ноготь носорога", "защита от огня", 300);
+            Console.WriteLine(ingredient1 + ingredient2);
+            Console.WriteLine(Price.WhichPrice(ingredient1));
         }
     }
 }
