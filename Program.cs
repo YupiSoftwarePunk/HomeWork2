@@ -144,6 +144,15 @@ namespace HomeWork2
             Ingredient ingredient2 = new Ingredient("Ноготь носорога", "защита от огня", 300);
             Console.WriteLine(ingredient1 + ingredient2);
             Console.WriteLine(Price.WhichPrice(ingredient1));
+
+            Console.WriteLine("\n");
+
+            Post post1 = new Post(1212, 100, 20, "hello");
+            Post post2 = new Post(1213, 150, 100, "bye");
+            Console.WriteLine(post2 + 12);
+            Console.WriteLine(post2 - 12);
+            Console.WriteLine(Recomendations.Recommend(post2));
+
         }
     }
 }
